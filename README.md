@@ -1,4 +1,5 @@
-== Repository with verification & validation cases for CFD programs ==
+Repository with verification & validation cases for CFD programs
+----------------------------------------------------------------
 
 Branches:
 * compressible - compressible flows
