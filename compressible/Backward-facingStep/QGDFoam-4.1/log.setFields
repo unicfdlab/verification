@@ -1,0 +1,44 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.1
+Exec   : setFields
+Date   : Feb 09 2018
+Time   : 13:30:53
+Host   : "bl022.unicluster.ru"
+PID    : 31140
+Case   : /lustre/unicluster/home/k.vatutin/verification/compressible/Backward-facingStep/QGDFoam-4.1
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading setFieldsDict
+
+Setting field default values
+    Setting internal values of volScalarField T
+    Setting internal values of volScalarField p
+    Setting internal values of volVectorField U
+
+Setting field region values
+
+
+--> FOAM FATAL IO ERROR: 
+keyword regions is undefined in dictionary "/lustre/unicluster/home/k.vatutin/verification/compressible/Backward-facingStep/QGDFoam-4.1/system/setFieldsDict"
+
+file: /lustre/unicluster/home/k.vatutin/verification/compressible/Backward-facingStep/QGDFoam-4.1/system/setFieldsDict from line 19 to line 23.
+
+    From function const Foam::entry& Foam::dictionary::lookupEntry(const Foam::word&, bool, bool) const
+    in file db/dictionary/dictionary.C at line 441.
+
+FOAM exiting
+
